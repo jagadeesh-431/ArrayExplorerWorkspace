@@ -1,0 +1,88 @@
+h1{
+    position: relative;
+    bottom:300px;
+    left:300px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://e0.pxfuel.com/wallpapers/672/237/desktop-wallpaper-neon-retro-background-with-palm-tree-page-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    margin-right: 350px;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/285/172/9/sunset-8k-forest-4k-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    position: relative;
+    left:270px;
+    top:50px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(77, 236, 8);
+    border-radius: 11px;
+    border-width: 5px;;
+}   
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#myInput{
+    position: relative;
+    left:20px;
+    width:200px;
+}
+#buttons button {
+    left:20px;
+    position:relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s ease;
+
+}
+#buttons button:hover{
+    background-color: #02ed0a;    /* Nice green color */
+    color: white;
+    transform: scale(1.05);       /* Slight zoom */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+p{
+    position:relative;
+    right:570px;
+    top:270px;
+    width:800px;
+    margin:50px;
+    display: flex;
+}
+/* Responsive tweaks */
+@media (max-width: 500px) {
+    #container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #buttons button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input.myInput {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
